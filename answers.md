@@ -1,3 +1,4 @@
+<!-- PART 1 -->
 <!-- 1. -->
 document.querySelector('.profile-image')
 var profileImage = document.querySelector('.profile-image')
@@ -52,3 +53,17 @@ document.querySelector('#submit').disabled = true
 
 <!-- 15. -->
 document.querySelector('.bio-info').parentNode.removeChild(document.querySelector('.bio-info'))
+
+<!-- #PART 2 -->
+<!-- 1. -->
+document.querySelector('#time-travel').parentNode.removeChild(document.querySelector('#time-travel'))
+
+<!-- 2. -->
+img = document.querySelector('#right-image.portfolio-image img').cloneNode();document.querySelector('portfolio-container').appendChild(img);
+
+<!-- 3. -->
+for (i = 0; i < 10; i++) { img = document.querySelector('#right-image img').cloneNode(); document.querySelector('.portfolio-container').appendChild(img); }
+
+<!-- 4. -->
+const listItem = document.createElement('li'); const leftSpan = document.createElement('span'); var lastUpdated = document.createTextNode('Page last updated on'); leftSpan.appendChild(lastUpdated); listItem.appendChild(leftSpan); const rightSpan = document.createElement('span'); let date = document.createTextNode(new Date); rightSpan.appendChild(date); listItem.appendChild(rightSpan); const sidebar = document.querySelector('.bio-info'); sidebar.appendChild(listItem);
+
